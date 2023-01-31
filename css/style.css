@@ -1,0 +1,132 @@
+/* Root Reset */
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+    font-family: 'Cantarell','Courier New', Courier, monospace;
+}
+
+*, *::before,*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#335eea;
+    --link-color: #506690;
+    --btn-hover-color:#2b50c7;
+    --lg-heading:#161c2d;
+    --text-content:#869ab8;
+    --fixed-header-height: 4.5rem;
+}
+
+/* HTML Reset */
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #fafbfb;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Container - Header */
+
+.container{
+    /* TODO: Prendre en compte le max-with */
+    /* ? max-width: 1440px; */
+    width: 100%;
+}
+
+/** ===========RESPONSIVE Tablette(992px)=================  */
+@media screen and (max-width: 992px) {
+    .container{
+        /* TODO: Prendre en compte le max-with */
+        /* width: 992px; */
+        margin: 0 auto;
+    }
+}
+/** ===========RESPONSIVE mobile(768px)=================  */
+
+@media screen and (max-width:768px) {
+    .container{
+        /* TODO: Prendre en compte le max-with */
+        /* width: 992px; */
+        margin: 0 auto;
+    }
+}
+
+/* Header */
+.header{
+    /* TODO: Prevoir de changer losque va integre l'image */
+    height: var(--fixed-header-height);
+    padding: 0 1.7rem;
+}
+
+/** ============NAV============== */
+.nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+/** ===========NAV_MENU, NAV_LOG =========  */
+.nav_menu_list, .nav_log_list{
+    max-width: 20%;
+    justify-content: space-evenly;
+}
+
+.nav_log_list{
+    max-width: 10%;
+}
+
+.nav_menu_item .nav_menu_link, .nav_log_item .nav_log_link{
+    font-size: 16px;
+    line-height: 27px;
+    color: var(--link-color);
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+
+.nav_menu_link:hover, .nav_log_link:hover{
+    color: var(--btn-hover-color);
+}
+
+.toggle_btn{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--lg-heading);
+    z-index: 4;
+    display: none;
+}
+
+.nav_menu, .close_btn{
+    display: none;
+}
+
+.show{
+    right: 3%!important;
+}
+
+/** =============LOGO============= */
+.logo h2{
+    font-size: 28px;
+    color: #335eea;
+    margin: 0 4rem;
+}
+
