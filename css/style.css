@@ -50,65 +50,16 @@ button{
     width: 100%;
 }
 
-/** ========== RESPONSIVE TABLETTE:992px=========== */
-
-/*@media screen and (max-width: 992px) {
-    .container{
-        margin: 0 auto;
-    }
-}*/
-
-/** ========== RESPONSIVE MOBILE:768px=========== */
-
-/* @media screen and (min-width:768px) {
-    .container{
-        margin: 0 auto;
-    }
-
-    .toggle_btn{
-        display: none;
-    }
-
-    .nav_menu{
-        display: block;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .logo h2{
-        font-size: 23px;
-    }
-
-    .nav_menu{
-        position: fixed;
-        width: 93%;
-        height: 100%;
-        display: block;
-        top: 2.5%;
-        background-color: #fff;
-        padding: 3rem;
-        border-radius: 10px;
-        box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
-        z-index: 50;
-        transition: 0.4s;
-    }
-
-    .nav_menu_list{
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 4rem;
-    }
-    
-} */
-
-/* Header */
+/* *===============Header ===================*/
 
 .header{
     height: 100vh;
     background-image: url(/assets/img/header-bg.jpg);
     background-size: cover;
     padding: 0 1.7rem;
-
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .header_nav{
@@ -157,9 +108,9 @@ button{
   }
 
   .btn.nav_log_link.signup_link:hover{
-    background-color: var(--text-content);
+    background-color: var(--primary-color);
     color: #fff;
-    border: none;
+    font-weight: 500;
   }
 
 .toggle_btn, .close_btn{
@@ -187,7 +138,7 @@ button{
 .wrapper_content{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .wrapper_item_1{
     padding: 5rem 1.5rem;
@@ -262,7 +213,7 @@ button{
 }
 
 .wrapper_item_2{
-    height: 100%;
+    margin-left: 20px;
 }
 .wrapper_item_2 img{
     width: auto;
@@ -271,7 +222,7 @@ button{
 .team_img_wrapper{
     width: 500px;
     max-width: 100%;
-    height: 440px;
+    height: 100%;
 }
 
 .team_img_wrapper img{
@@ -280,6 +231,28 @@ button{
     object-fit: contain;
 }
 
+/* * =============ICON-DOWN================== */
+.down_icon {
+    text-align: center;
+    color: var(--primary-color);
+    transition: 0.4s;
+}
+
+.down_icon:hover{
+    color: var(--btn-hover-color);
+}
+
+.down_icon i{
+    font-size: 2.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 97%;
+}
+
+
+
+/** ==================MAIN======================  */
 .main{
     width: 100%;
     margin-top: 1rem ;
@@ -310,16 +283,25 @@ button{
    color: grey;
    line-height: 2rem;
 }
+
+/* * ===============MAIN PRODUCTS================ */
+.main_products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .products_cards{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 100%;
+    margin: 70px auto 0;
 }
 
 .product_item{
     width: 30%;
-    margin-top: 5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
     border-radius: 2%;
     background-color: #fff;
     box-shadow: -1px 18px 41px -3px rgba(0,0,0,0.14);
@@ -328,7 +310,6 @@ button{
 
 .card_img{
     width: 100%;
-    height: 100%;
     object-fit: cover;
     overflow: hidden;
     border-radius: 2% 2% 0 0;
