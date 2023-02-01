@@ -10,7 +10,7 @@ const nav_menu = document.querySelector(".nav_menu");
 
 toggle_btn_Id.addEventListener('click', function(e){
     e.preventDefault();
-    nav_menu.style.right = ".1%"
+    nav_menu.style.right = "0"
     close_btn_Cl.style.display = "block";
 })
 
