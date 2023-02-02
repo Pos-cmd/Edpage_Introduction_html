@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Cantarell', "Courier New", Courier, monospace;
+  font-family:"Courier New", Courier, monospace;
 }
 *,
 ::after,
@@ -121,8 +121,8 @@ button {
 }
 .wrapper_item1_heading {
   font-weight: 300;
-  font-size: 40px;
-  line-height: 55px;
+  font-size: 5vw;
+  /* line-height: 1rem; */
 }
 .wrapper_item1_heading span {
   color: var(--primary-color);
@@ -287,7 +287,7 @@ button {
 footer {
   width: 100%;
   background-color: var(--primary-color);
-  height: 12px;
+  height: 30px;
   margin-top: 8rem;
 }
 @media screen and (max-width: 992px) and (min-width: 769px) {
