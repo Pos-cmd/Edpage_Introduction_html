@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:"Courier New", Courier, monospace;
+  font-family: "Roboto Mono","Courier New", Courier, monospace;
 }
 *,
 ::after,
@@ -285,10 +286,11 @@ button {
   color: #6c6e70;
 }
 footer {
+  font-size: 1vw;
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: var(--primary-color);
   height: 4.5rem;
   margin-top: 8rem;
@@ -301,6 +303,12 @@ footer span {
   margin: 3rem;
 }
 
+footer .logo {
+  color: #fff;
+  font-size: 30px;
+  position: relative;
+  margin-left: 0;
+}
 @media screen and (max-width: 992px) and (min-width: 769px) {
   .header {
     align-items: center;
@@ -395,6 +403,7 @@ footer span {
     padding: 0 10rem;
   }
 }
+
 @media screen and (max-width: 768px) {
   .logo {
     font-size: 30px;
@@ -466,6 +475,7 @@ footer span {
     padding: 0;
   }
   .btn_wrapper {
+    margin: 1rem auto;
     justify-content: center;
     max-width: 300px;
   }
@@ -487,5 +497,14 @@ footer span {
     cursor: pointer;
     transition: 0.5s;
     color: var(--primary-color);
+  }
+
+  footer{
+    font-size: .7rem;
+  }
+
+  footer .logo {
+    margin: 0;
+    color: #fff;
   }
 }
