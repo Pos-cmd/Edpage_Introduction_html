@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Cantarell', "Courier New", Courier, monospace;
+  font-family: "Cantarell", "Courier New", Courier, monospace;
 }
 *,
 ::after,
@@ -285,11 +285,22 @@ button {
   color: #6c6e70;
 }
 footer {
+  display: flex;
   width: 100%;
+  align-items: center;
+  justify-content: center;
   background-color: var(--primary-color);
-  height: 12px;
+  height: 4.5rem;
   margin-top: 8rem;
 }
+
+footer span {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 5rem;
+}
+
 @media screen and (max-width: 992px) and (min-width: 769px) {
   .header {
     align-items: center;
